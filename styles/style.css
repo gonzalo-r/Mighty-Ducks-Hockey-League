@@ -1,0 +1,257 @@
+*:not(dl, dd, dt, ul, ol, li) {
+ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: radial-gradient(
+      rgba(255, 255, 255, 0) 60%,
+      rgba(255, 255, 255, 1)
+    ),
+    url(/assets/design3_image4.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: rgba(29, 76, 90, 0.616);
+    background-repeat: no-repeat;
+  }
+  
+main {
+  display: flex;
+  flex-direction: column;
+  color: rgb(247, 238, 192);
+  width: 100vw;
+  flex-grow: 1;
+}
+footer {
+  background-color: rgba(29, 76, 90, 0.616);
+  color: wheat;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#logo {
+  height: 10rem;
+  z-index: 1;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
+/* //////////// Titulos //////////////*/
+h1 {
+  color: white;
+  padding: 2rem 2rem;
+  width: 100vw;
+  text-align: center;
+}
+
+h2 {
+  color: rgb(17, 212, 105);
+  background-color: rgba(21, 22, 37, 0.63);
+  padding: 1rem 2rem;
+  margin-left: 15rem;
+  margin-top: 1rem;
+  border: 0.1rem solid white;
+}
+h3 {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  background: linear-gradient(to right, rgb(29, 76, 90), white);
+  border: 0.1rem solid white;
+}
+/*/////////// Navegador    //////////////*/
+nav {
+  background-color: rgb(29, 76, 90);
+  height: 4rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav a {
+  color: rgb(247, 238, 192);
+  text-decoration: none;
+  box-shadow: 5px 5px 5px 0 rgb(17, 212, 105);
+  border: 0.2em solid rgb(29, 76, 90);
+  /*border-radius: 10%;*/
+  padding: 0.5rem 1rem;
+  margin-top: 0.2rem;
+  cursor: pointer;
+  
+}
+nav a:hover {
+  box-shadow: 5px 5px 5px 0 white;
+  background: linear-gradient(to right, rgba(230, 228, 225, 0.815), black);
+}
+a[href="#"] {
+  
+  background: linear-gradient(to right, rgba(230, 228, 225, 0.815), black);
+}
+
+/* ////////////////  Home   ////////////////// */
+.list_home {
+  margin-left: 50%;
+  margin-right: 2%;
+}
+.list_home dt {
+  font-size: 1.5em;
+  border-top: 0.1rem solid rgb(17, 212, 105);
+  border-left: 0.1rem solid rgb(17, 212, 105);
+  padding: 0.5rem 0.5rem;
+  color: white;
+  /*background-color: rgb(29, 76, 90);*/
+  background: linear-gradient(to right, rgb(29, 76, 90), white);
+}
+.list_home dd {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  background: linear-gradient(to right, rgb(41, 160, 94), rgb(36, 43, 38));
+  color: wheat;
+  border-right: 0.1rem solid rgb(17, 212, 105);
+  border-bottom: 0.1rem solid rgb(17, 212, 105);
+}
+
+/*////////// about us ////////*/
+.us {
+  color: blanchedalmond;
+  margin: 0 14rem 0 15rem;
+  background: linear-gradient(
+    to right,
+    rgba(41, 160, 94, 0.274),
+    rgb(36, 43, 38)
+  );
+}
+.us p {
+  margin: 1rem 1rem;
+  padding: 1rem 1rem;
+  font-size: 1.2rem;
+}
+
+/*////////// Contact us ////////*/
+.uscontact {
+  color: blanchedalmond;
+  margin: 0 15rem 14rem;
+  background: linear-gradient(
+    to right,
+    rgba(41, 160, 94, 0.274),
+    rgb(36, 43, 38)
+  );
+}
+.uscontact p {
+  margin: 1rem 1rem;
+  padding: 1rem 1rem;
+  font-size: 1.2rem;
+}
+
+/* ////////////// rules //////////////// */
+.Hrules {
+  margin: 1rem 5rem;
+}
+.abc {
+  list-style-type: lower-latin;
+}
+.rules {
+  margin: 4rem 5rem;
+  padding: 1rem 3rem;
+  flex-grow: 1;
+  background: linear-gradient(
+    to right,
+    rgba(41, 160, 94, 0.178),
+    rgb(36, 43, 38)
+  );
+  font-size: 1.2rem;
+}
+.rules1 p {
+  margin-top: 0.5rem;
+}
+.rules1 li {
+  margin-top: 1rem;
+}
+dt {
+  margin-top: 1rem;
+}
+dd {
+  margin-top: 0.5rem;
+}
+
+/* /////////////// Game_Info //////////////*/
+.fecha {
+  text-align: center;
+  border-bottom: 0.1rem solid rgb(41, 160, 94);
+}
+tr {
+  height: 3rem;
+}
+tr:hover {
+  background: linear-gradient(
+    to right,
+    rgba(41, 160, 94, 0.555),
+    rgb(36, 43, 38)
+  );
+}
+
+th {
+  text-align: left;
+}
+li {
+  text-decoration: none;
+}
+table {
+  background: linear-gradient(
+    to right,
+    rgba(36, 43, 38, 0.568),
+    rgba(41, 160, 94, 0.178)
+  );
+  width: 55%;
+  margin-left: 40%;
+  border: 0.1rem solid rgb(41, 160, 94);
+}
+.gametex {
+  margin-left: 7rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  background-color: rgba(36, 43, 38, 0.568);
+  padding: 1rem 1rem;
+}
+.gameli {
+  margin: 2rem 2rem;
+}
+
+/* ////////////// form Registration /////////////// */
+.formuMain {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 14rem;
+  background: linear-gradient(
+    to right,
+    rgba(36, 43, 38, 0.452),
+    rgba(41, 160, 94, 0.37)
+  );
+}
+fieldset {
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid rgb(153, 174, 180);
+}
+input {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  padding-left: 5px;
+}
+.botsend {
+  width: 10em;
+  color: rgb(17, 212, 105);
+  height: 2.5em;
+  background-color: rgba(41, 160, 94, 0.37);
+  text-align: left;
+}
+.botsend:hover {
+  background: linear-gradient(to right, rgb(29, 76, 90), white);
+}
